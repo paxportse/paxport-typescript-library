@@ -1,0 +1,50 @@
+{
+  "name": "typescript-types-library",
+  "version": "1.0.0",
+  "description": "Paxport types library for typescript projects",
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
+  "author": "Paxport Group",
+  "license": "",
+  "scripts": {
+    "prepare": "npm run build",
+    "format": "prettier --write \"src/**/*.ts\" --config .prettierrc",
+    "lint": "eslint .",
+    "compile": "tsc",
+    "bundle": "rollup --config --bundleConfigAsCjs",
+    "clear": "rimraf build",
+    "build": "rimraf build && tsc && rollup --config --bundleConfigAsCjs && rimraf build/transpiled"
+  },
+  "repository": {
+    "type": "git",
+    "repositoryUrl": "https://github.com/paxportse/typescript-types-library.git"
+  },
+  "bugs": {
+    "url": "https://github.com/paxportse/typescript-types-library/issues"
+  },
+  "homepage": "https://github.com/paxportse/typescript-types-library#readme",
+  "engines": {
+    "node": ">=20"
+  },
+  "files": [
+    "build/index.d.ts",
+    "build/index.js",
+    "build/index.js.map"
+  ],
+  "keywords": [
+    "typescript"
+  ],
+  "devDependencies": {
+    "@rollup/plugin-typescript": "^11.1.6",
+    "@typescript-eslint/eslint-plugin": "^7.3.1",
+    "@typescript-eslint/parser": "^7.3.1",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-prettier": "^5.1.3",
+    "prettier": "^3.2.5",
+    "rollup": "^4.13.0",
+    "rollup-plugin-dts": "^6.1.0",
+    "typescript": "^5.4.2"
+  }
+}
