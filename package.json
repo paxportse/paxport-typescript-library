@@ -8,7 +8,7 @@
   "license": "",
   "scripts": {
     "prepare": "npm run build",
-    "format": "prettier --write \"src/**/*.ts\" --config .prettierrc",
+    "format": "prettier --write \"src/**/*.ts\" --config .prettierrc.json",
     "lint": "eslint .",
     "compile": "tsc",
     "bundle": "rollup --config --bundleConfigAsCjs",
