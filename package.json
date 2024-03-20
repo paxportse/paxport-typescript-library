@@ -1,5 +1,5 @@
 {
-  "name": "typescript-types-library",
+  "name": "paxport-typescript-library",
   "version": "1.0.0",
   "description": "Paxport types library for typescript projects",
   "main": "build/index.js",
@@ -17,12 +17,12 @@
   },
   "repository": {
     "type": "git",
-    "repositoryUrl": "https://github.com/paxportse/typescript-types-library.git"
+    "repositoryUrl": "https://github.com/paxportse/paxport-typescript-library.git"
   },
   "bugs": {
-    "url": "https://github.com/paxportse/typescript-types-library/issues"
+    "url": "https://github.com/paxportse/paxport-typescript-library/issues"
   },
-  "homepage": "https://github.com/paxportse/typescript-types-library#readme",
+  "homepage": "https://github.com/paxportse/paxport-typescript-library#readme",
   "engines": {
     "node": ">=20"
   },
